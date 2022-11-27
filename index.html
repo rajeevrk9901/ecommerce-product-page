@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="md:px-28 px-8 relative">
+    <header>
+        <nav class="bg-white border-b-2 flex font-md py-6 relative md:items-baseline items-center">
+            <div class="px-6">
+                <img src="images/logo.svg" alt="">
+            </div>
+            <!-- Menu Container -->
+            <div class="flex md:space-x-96 space-x-12 ">
+                <div class="desktop-nav md:block hidden">
+                    <ul class="flex gap-12">
+                        <li>Collections</li>
+                        <li>Men</li>
+                        <li>Women</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+
+                <div id="mobile-nav" class="mobile-nav md:hidden absolute top-24 right-0">
+                    <ul class="flex gap-8 flex-col py-8 bg-white divide-y font-bold px-12 items-center ">
+                        <li>Collections</li>
+                        <li>Men</li>
+                        <li>Women</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+
+
+                <div class="flex">
+                    <ul class="flex md:space-x-12 space-x-6 items-center">
+                        <li><img class="md:w-6 w-20 flex justify-center align-center" src="images\icon-cart.svg" alt="">
+                        </li>
+                        <li><img class="md:w-8 flex justify-center align-center" src="images\image-avatar.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="ham-menu" class="flex flex-col gap-1 md:hidden justify-center items-center">
+                    <div class="w-7 h-1 bg-black"></div>
+                    <div class="w-7 h-1 bg-black"></div>
+                    <div class="w-7 h-1 bg-black"></div>
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="md:flex-row flex flex-col md:space-x-24 items-center space-y-6 md:space-y-0 mt-12">
+        <div class="space-y-6 md:w-1/2">
+            <div>
+                <picture>
+                    <img class="rounded-xl" src="images\image-product-1.jpg" alt="" srcset="">
+                </picture>
+            </div>
+            <!-- Thumbnails -->
+            <ul class="flex space-x-6">
+                <li><img class="rounded-xl hover:opacity-50 hover:outline hover:outline-yellow-600"
+                        src="images\image-product-1-thumbnail.jpg" alt=""></li>
+                <li><img class="rounded-xl" src="images\image-product-2-thumbnail.jpg" alt=""></li>
+                <li><img class="rounded-xl" src="images\image-product-3-thumbnail.jpg" alt=""></li>
+                <li><img class="rounded-xl" src="images\image-product-4-thumbnail.jpg" alt=""></li>
+            </ul>
+        </div>
+
+        <div class="space-y-6 md:w-1/2">
+            <div class="">
+                <p class="uppercase text-yellow-500 font-bold">Sneaker company</p>
+                <div class="hd text-xl font-bold">Fall Limited Edition Sneakers</div>
+            </div>
+            <div class="">
+                <p>These low-profiles sneakers are perfect casual wear companion. Featuring a durable rubber oter sole.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, porro.</p>
+            </div>
+            <div class="md:flex-col flex justify-between">
+                <div class="hd text-xl font-bold">$125.00 <span
+                        class="text-yellow-600 bg-red-100 text-sm px-2 py-2 mx-4 rounded-md">50%</span>
+                </div>
+                <p> <del>$250.00</del> </p>
+            </div>
+            <div class="md:flex-row flex flex-col md:space-x-12 md:space-y-0 space-y-6 items-center justify-center ">
+                <button
+                    class="flex items-center justify-center w-full bg-gray-300 px-6 rounded-md font-bold text-yellow-500 py-1 text-3xl text-center">
+                    -
+                    <span class="md:mx-6 mx-24 text-black font-bold text-xl">0</span> + </button>
+                <button
+                    class="flex w-full  py-2 bg-red-400 text-white font-bold rounded-md items-center gap-8 justify-center">
+                    <img class="pr-6" src="images\icons8-shopping-cart-30.png" alt="">
+                    Add to cart</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center py-6 font-bold">Made With Love 3 By 42 Rajeev</footer>
+    <div class="attribution text-center py-4">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Rajeev Ranjan Kumar</a>.
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
